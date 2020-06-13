@@ -250,7 +250,6 @@
 
 <script>
 import Dots from '../assets/images/dots.svg'
-import axios from 'axios'
 
 const getEmptyContactFormData = () => ({
 	name: '',
@@ -276,16 +275,22 @@ export default {
 	methods: {
 		async submitContactForm() {
 			try {
-				await axios.post('/', this.encodeForm(this.contactFormData), {
+				// Send request
+				await fetch('/', {
+					method: 'POST',
+					body: this.encodeForm(this.contactFormData),
 					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 				})
 				this.isSendingForm = true
+
+				// Reset form and show success message
 				this.resetContactForm()
 				this.isFormSuccessMessageVisible = true
 				setTimeout(() => {
 					this.isFormSuccessMessageVisible = false
 				}, 4000)
 			} catch {
+				// Show a fail message
 				this.isFormFailMessageVisible = true
 				setTimeout(() => {
 					this.isFormFailMessageVisible = false
