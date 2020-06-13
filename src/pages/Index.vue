@@ -3,39 +3,39 @@
 		<div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
 			<div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-right">
 				<div class="leading-tight">דורית שכטר</div>
-				<div class="text-green-700 leading-tight">ייעוץ חיתום ותביעות ביטוח חיים ,בריאות וסיעוד</div>
+				<div class="text-green-700 leading-tight">ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד</div>
 			</div>
-			<div class="mt-8 sm:mt-0">
+			<div class="mt-8 sm:mt-0 w-6/12">
 				<g-image src="../assets/images/profile.jpg" alt="hero" class="mx-auto sm:mx-0" />
 			</div>
 		</div>
 		<!-- end hero -->
 
-		<div class="container-inner mx-auto">
+		<div class="container-inner mx-auto mb-12">
+			<p class="text-lg sm:text-xl mb-6">
+				יועצת לענייני חיתום ותביעות בתחום ביטוח חיים, בריאות וסיעוד עתירת נסיון וידע של כ-30 שנה בנושאים אלו.
+				חברת הוועד המנהל של אגודת החתמים ומיישבי התביעות.
+			</p>
 			<p class="text-lg sm:text-xl">
-				This gridsome theme was forked from my <a href="https://andremadarang.com">personal website</a>. I added
-				more features and decided to release it as an open source project. Check it out on
-				<a href="https://github.com/drehimself/gridsome-portfolio-starter">GitHub</a> or check out the
-				<a href="https://www.youtube.com/watch?v=uHo6o1TNQeE">screencast I did</a>. Feel free to use it for your
-				own site or projects! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, repellat.
-				Dolores iure, quas perspiciatis rerum quaerat atque eum repellat autem.
+				מנהלת מחלקת חיתום במשך כ20 שנה בחברות ביטוח שונות מנהלת מחלקת תביעות במשך כ7 שנים. שותפה לכתיבת תנאים
+				כלליים,קביעת מדיניות החברה, ביצוע הדרכות מקצועיות לעובדים וסוכנים וסיוע מקצועי תדיר למחלקת התביעות.
 			</p>
 
-			<div class="flex justify-between items-center py-6">
+			<!-- TODO: replace images -->
+			<!-- <div class="flex justify-between items-center py-6">
 				<div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
 					<g-image src="../assets/images/profile.jpg" alt="browser" />
 				</div>
 				<div class="w-1/2 px-8 hidden sm:flex justify-end">
 					<g-image src="../assets/images/profile.jpg" alt="mobile" />
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="overflow-x-hidden">
-			<div
-				class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
-			>
-				<h2 class="font-bold mb-6" id="projects">Here are some projects I've worked on:</h2>
+			<div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b pb-16 relative">
+				<!-- margin is more appropriate here than padding, but we need the padding for the #anchor spacing when scrolling -->
+				<h2 class="font-bold mb-6 pt-16" id="projects">שירותים</h2>
 
 				<div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg);">
 					<svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
@@ -43,31 +43,27 @@
 
 				<ul class="text-lg sm:text-xl space-y-6">
 					<li class="checkmark">
-						<div>Project One</div>
+						<div>הערכות ראשוניות</div>
 						<div class="text-lg text-gray-600">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo
-							exercitationem a, eius non culpa itaque!
+							כתיבת הערכה ראשונית בתיקי תביעה
 						</div>
 					</li>
 					<li class="checkmark">
-						<div>Project Two</div>
+						<div>חוות דעת</div>
 						<div class="text-lg text-gray-600">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo
-							exercitationem a, eius non culpa itaque!
+							כתיבת חוות דעת מקצועית לשם הגשה לחברות הביטוח או לבית המשפט
 						</div>
 					</li>
 					<li class="checkmark">
-						<div>Project Three</div>
+						<div>ייעוץ לתובעים</div>
 						<div class="text-lg text-gray-600">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo
-							exercitationem a, eius non culpa itaque!
+							מתן ייעוץ בתיקים משפטיים
 						</div>
 					</li>
 					<li class="checkmark">
-						<div>Project Four</div>
+						<div>ייעוץ לסוכני ביטוח</div>
 						<div class="text-lg text-gray-600">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo
-							exercitationem a, eius non culpa itaque!
+							ייעוץ הן בתחום החיתום והן בתחום התביעות
 						</div>
 					</li>
 				</ul>
@@ -77,16 +73,17 @@
 
 		<div class="overflow-x-hidden border-gray-200 border-b">
 			<div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
-				<h2 class="font-bold mb-6" id="about">Get to know me:</h2>
+				<!-- margin is more appropriate here than padding, but we need the padding for the #anchor spacing when scrolling -->
+				<h2 class="font-bold mb-6 pt-16" id="about">אודות</h2>
 
 				<div class="absolute left-0" style="top: 50px; transform: translateX(-100%);">
 					<svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
 				</div>
 
-				<div class="flex flex-col sm:flex-row justify-between items-center mb-16">
+				<div class="flex flex-col sm:flex-row justify-between items-center">
 					<div class="flex-1 text-lg sm:text-xl ml-6">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias
-						iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.
+						יועצת לענייני חיתום ותביעות בתחום ביטוח חיים, בריאות וסיעוד עתירת נסיון וידע של כ-30 שנה בנושאים
+						אלו. חברת הוועד המנהל של אגודת החתמים ומיישבי התביעות.
 					</div>
 				</div>
 			</div>
@@ -94,33 +91,31 @@
 		</div>
 
 		<div class="overflow-x-hidden">
-			<div class="contact-me bg-background-secondary pt-16">
+			<div class="contact-me bg-background-secondary">
 				<div class="container-inner mx-auto text-xl pb-4 relative">
-					<h2 class="font-bold mb-6" id="contact">Contact me:</h2>
+					<!-- margin is more appropriate here than padding, but we need the padding for the #anchor spacing when scrolling -->
+					<h2 class="font-bold mb-6 pt-16" id="contact">יצירת קשר</h2>
 
-					<div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg);">
+					<div class="absolute right-0 top-0 mt-16" style="transform: translate(100%) rotate(180deg);">
 						<svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
 					</div>
 
 					<p class="mb-12">
-						Static sites cannot submit forms on their own. However, services like
-						<a href="https://www.netlify.com/docs/form-handling">Netlify Forms</a> or
-						<a href="https://formspree.io">FormSpree</a> can help you do this without a backend.
+						ניתן ליצור קשר דרך הטופס או במייל.
 					</p>
-
 					<div class="text-lg sm:text-lg mb-16">
 						<form action="#" class="mb-12">
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
 									<label class="block mb-2 text-copy-primary" for="name">
-										Name
+										שם
 									</label>
 
 									<input
 										type="text"
 										name="name"
 										id="name"
-										placeholder="Jon Snow"
+										placeholder="ישראל ישראלי"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
 										required
 									/>
@@ -128,7 +123,7 @@
 
 								<div class="w-full px-4 md:w-1/2">
 									<label class="block text-copy-primary mb-2" for="email">
-										Email Address
+										דואר אלקטרוני
 									</label>
 
 									<input
@@ -137,14 +132,41 @@
 										id="email"
 										placeholder="email@example.com"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
-										required
 									/>
 								</div>
 							</div>
+							<div class="flex flex-wrap mb-6 -mx-4">
+								<div class="w-full px-4 md:w-1/2">
+									<label class="block text-copy-primary mb-2" for="subject">
+										נושא פנייה
+									</label>
 
+									<input
+										type="subject"
+										name="subject"
+										id="subject"
+										placeholder="חוות דעת מקצועית"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										required
+									/>
+								</div>
+								<div class="w-full px-4 md:w-1/2">
+									<label class="block text-copy-primary mb-2" for="tel">
+										טלפון
+									</label>
+
+									<input
+										type="tel"
+										name="tel"
+										id="tel"
+										placeholder="054-123-4567"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+									/>
+								</div>
+							</div>
 							<div class="w-full mb-12">
 								<label class="block text-copy-primary mb-2" for="message">
-									Message
+									הודעה
 								</label>
 
 								<textarea
@@ -152,19 +174,28 @@
 									rows="5"
 									name="message"
 									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4"
-									placeholder="Enter your message here."
-									required
+									placeholder="ברצוני לקבל שירות בנושא..."
 								></textarea>
 							</div>
 
 							<div class="flex justify-end w-full">
 								<input
 									type="submit"
-									value="Submit"
+									value="שליחה"
 									class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
 								/>
 							</div>
 						</form>
+						<div class="sm:w-8/12 flex-col mb-12 space-y-2">
+							<div class="flex justify-between flex-wrap">
+								<span class="ml-8 font-medium">דואר אלקטרוני</span>
+								<a href="mailto:dorit@doritshechter.com">dorit@doritshechter.com</a>
+							</div>
+							<div class="flex justify-between flex-wrap">
+								<span class="ml-8 font-medium">טלפון נייד</span>
+								<a href="tel:0545999044">0545-999-044</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -180,7 +211,7 @@
 import Dots from '../assets/images/dots.svg'
 export default {
 	metaInfo: {
-		title: 'Home',
+		title: 'דף הבית',
 	},
 	components: { Dots },
 }

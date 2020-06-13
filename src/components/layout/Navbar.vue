@@ -24,9 +24,9 @@
 						href="/#contact"
 						v-scroll-to="'#contact'"
 						class="text-copy-primary hover:text-gray-600"
-						>צור קשר</a
+						>יצירת קשר</a
 					>
-					<g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">צור קשר</g-link>
+					<g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">יצירת קשר</g-link>
 				</li>
 				<li>
 					<a

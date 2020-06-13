@@ -20,14 +20,6 @@
 	</div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 <script>
 import AppFooter from '../components/layout/AppFooter'
 import Navbar from '../components/layout/Navbar'
@@ -35,7 +27,7 @@ export default {
 	name: 'Default',
 	components: {
 		Navbar,
-		AppFooter
+		AppFooter,
 	},
 }
 </script>

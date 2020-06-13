@@ -1,5 +1,5 @@
 module.exports = {
-	icon: './src/assets/my-icon.png',
+	titleTemplate: 'דורית שכטר - ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד',
 	chainWebpack: (config) => {
 		const svgRule = config.module.rule('svg')
 		svgRule.uses.clear()
