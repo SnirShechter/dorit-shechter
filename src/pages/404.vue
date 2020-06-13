@@ -5,7 +5,7 @@
 				<h2 class="text-4xl font-bold mb-16">דף לא נמצא</h2>
 				<g-link
 					to="/"
-					class="block bg-green-700 hover:bg-green-800 hover:text-white text-white text-sm font-semibold tracking-wide shadow rounded cursor-pointer px-6 py-3"
+					class="block bg-blue-700 hover:bg-blue-800 hover:text-white text-white text-sm font-semibold tracking-wide shadow rounded cursor-pointer px-6 py-3"
 					>חזור לדף הבית</g-link
 				>
 			</div>

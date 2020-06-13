@@ -1,5 +1,5 @@
 <template>
-	<header class="border-t-14 border-green-700">
+	<header class="border-t-14 border-blue-700">
 		<nav class="container mx-auto flex flex-wrap flex-row-reverse justify-between items-center py-8">
 			<div>
 				<g-link to="/"><g-image src="../../assets/images/logo.png" class="w-20" alt="logo" /></g-link>

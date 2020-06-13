@@ -3,7 +3,7 @@
 		<div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
 			<div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-right">
 				<div class="leading-tight">דורית שכטר</div>
-				<div class="text-green-700 leading-tight">ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד</div>
+				<div class="text-blue-700 leading-tight">ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד</div>
 			</div>
 			<div class="mt-8 sm:mt-0 w-6/12">
 				<g-image src="../assets/images/profile.jpg" alt="hero" class="mx-auto sm:mx-0" />
@@ -116,7 +116,7 @@
 										name="name"
 										id="name"
 										placeholder="ישראל ישראלי"
-										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
 									/>
 								</div>
@@ -131,7 +131,7 @@
 										name="email"
 										id="email"
 										placeholder="email@example.com"
-										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 									/>
 								</div>
 							</div>
@@ -146,7 +146,7 @@
 										name="subject"
 										id="subject"
 										placeholder="חוות דעת מקצועית"
-										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
 									/>
 								</div>
@@ -160,7 +160,7 @@
 										name="tel"
 										id="tel"
 										placeholder="054-123-4567"
-										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 									/>
 								</div>
 							</div>
@@ -173,7 +173,7 @@
 									id="message"
 									rows="5"
 									name="message"
-									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4"
+									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-blue-700 mb-2 px-4 py-4"
 									placeholder="ברצוני לקבל שירות בנושא..."
 								></textarea>
 							</div>
@@ -182,7 +182,7 @@
 								<input
 									type="submit"
 									value="שליחה"
-									class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
+									class="block bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
 								/>
 							</div>
 						</form>
@@ -219,7 +219,7 @@ export default {
 
 <style lang="scss" scoped>
 .checkmark {
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2229%22%20height%3D%2229%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4.427%2024.93A14.5%2014.5%200%201%201%2024.93%204.427c5.495%205.69%205.416%2014.733-.177%2020.326s-14.637%205.672-20.326.177z%22%20fill%3D%22%232E855A%22/%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M10.234%2012.803l3.67%203.253L20.766%2010%2023%2012l-9.096%208L8%2014.789l2.234-2z%22/%3E%3C/svg%3E');
+	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2229%22%20height%3D%2229%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4.427%2024.93A14.5%2014.5%200%201%201%2024.93%204.427c5.495%205.69%205.416%2014.733-.177%2020.326s-14.637%205.672-20.326.177z%22%20fill%3D%22%23008ab8%22/%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M10.234%2012.803l3.67%203.253L20.766%2010%2023%2012l-9.096%208L8%2014.789l2.234-2z%22/%3E%3C/svg%3E');
 	background-repeat: no-repeat;
 	@apply pl-10;
 }
