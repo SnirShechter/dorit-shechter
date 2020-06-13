@@ -6,7 +6,13 @@
 				<div class="text-blue-700 leading-tight">ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד</div>
 			</div>
 			<div class="mt-8 sm:mt-0 sm:w-6/12">
-				<g-image src="../assets/images/profile.jpg" alt="hero" class="mx-auto sm:mx-0" />
+				<g-image
+					src="../assets/images/profile.jpg"
+					alt="hero"
+					class="mx-auto sm:mx-0"
+					width="349"
+					height="524"
+				/>
 			</div>
 		</div>
 		<!-- end hero -->

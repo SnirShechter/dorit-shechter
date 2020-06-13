@@ -3,13 +3,13 @@
 		<div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
 			<div class="mb-8 lg:mb-0">
 				<div>
-					<a href="/sitemap.xml" class="text-white hover:text-gray-400 font-normal">מפת אתר</a>
+					<a href="/sitemap.xml" class="text-white hover:text-gray-400 font-bold font-normal">מפת אתר</a>
 				</div>
 			</div>
 			<ul class="flex items-center space-x-8 space-x-reverse">
 				<li>
 					<a href="mailto:dorit@doritshechter.com" class="text-white hover:text-gray-400">
-						<svg width="25" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<svg width="25" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" alt="email">
 							<path
 								d="M2.5 0h20A2.5 2.5 0 0 1 25 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-20A2.5 2.5 0 0 1 0 17.5v-15C0 1.125 1.125 0 2.5 0zm20 4.225V2.5h-20v1.725l10 5 10-5zm0 2.8l-9.438 4.713a1.25 1.25 0 0 1-1.124 0L2.5 7.025V17.5h20V7.025z"
 								fill-rule="nonzero"
@@ -21,6 +21,7 @@
 					<a href="tel:0545999044" class="text-white hover:text-gray-400">
 						<svg
 							viewBox="0 0 500 500"
+							alt="phone"
 							width="25"
 							height="23"
 							fill="currentColor"
@@ -37,10 +38,12 @@
 				<li>
 					<a
 						href="https://www.linkedin.com/in/dorit-shechter-866573190"
+						rel="noreferrer noopener"
 						target="_blank"
 						class="text-white hover:text-gray-400"
 					>
 						<svg
+							alt="linkedin"
 							viewBox="0 50 512 512"
 							height="25"
 							width="25"
