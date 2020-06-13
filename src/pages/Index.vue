@@ -112,15 +112,11 @@
 					<div class="text-lg sm:text-lg mb-16">
 						<form
 							data-netlify="true"
-							data-netlify-honeypot="bot-field"
 							class="mb-12"
 							name="contact"
 							method="POST"
 							@submit.prevent="submitContactForm"
 						>
-							<div class="hidden">
-								<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-							</div>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
 									<label class="block mb-2 text-copy-primary" for="name">
