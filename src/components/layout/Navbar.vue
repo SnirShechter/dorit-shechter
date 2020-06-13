@@ -2,10 +2,14 @@
 	<header class="border-t-14 border-blue-700">
 		<nav class="container mx-auto flex flex-wrap flex-row-reverse justify-between items-center py-8">
 			<div>
-				<g-link to="/"><g-image src="../../assets/images/logo.png" class="w-20" alt="logo" /></g-link>
+				<g-link to="/"
+					><g-image src="../../assets/images/logo.png" class="w-20" alt="logo" width="80" height="77"
+				/></g-link>
 			</div>
 			<div class="block lg:hidden">
 				<button
+					aria-label="menu"
+					text="menu"
 					@click="toggle"
 					class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
 				>
