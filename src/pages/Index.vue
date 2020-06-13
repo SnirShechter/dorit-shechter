@@ -111,6 +111,7 @@
 					</p>
 					<div class="text-lg sm:text-lg mb-16">
 						<form
+							netlify
 							data-netlify="true"
 							class="mb-12"
 							name="contact"
@@ -126,6 +127,7 @@
 									<input
 										type="text"
 										name="name"
+										v-model="contactFormData.name"
 										id="name"
 										autocomplete="name"
 										placeholder="ישראל ישראלי"
@@ -142,6 +144,7 @@
 									<input
 										type="email"
 										name="email"
+										v-model="contactFormData.email"
 										id="email"
 										autocomplete="email"
 										placeholder="email@example.com"
@@ -160,6 +163,7 @@
 										autocomplete="off"
 										name="subject"
 										id="subject"
+										v-model="contactFormData.subject"
 										placeholder="חוות דעת מקצועית"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
@@ -174,6 +178,7 @@
 										type="tel"
 										name="tel"
 										id="tel"
+										v-model="contactFormData.phone"
 										autocomplete="tel"
 										placeholder="054-123-4567"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
@@ -190,6 +195,7 @@
 									rows="5"
 									autocomplete="off"
 									name="message"
+									v-model="contactFormData.message"
 									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-blue-700 mb-2 px-4 py-4"
 									placeholder="ברצוני לקבל שירות בנושא..."
 								></textarea>
@@ -246,7 +252,14 @@
 import Dots from '../assets/images/dots.svg'
 import axios from 'axios'
 
-const getEmptyContactFormData = () => ({ name: '', email: '', phone: '', subject: '', message: '' })
+const getEmptyContactFormData = () => ({
+	name: '',
+	email: '',
+	phone: '',
+	subject: '',
+	message: '',
+	'form-name': 'contact',
+})
 export default {
 	metaInfo: {
 		title: 'דף הבית',
@@ -263,7 +276,9 @@ export default {
 	methods: {
 		async submitContactForm() {
 			try {
-				await axios.post('/', this.contactFormData)
+				await axios.post('/', this.encodeForm(this.contactFormData), {
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				})
 				this.isSendingForm = true
 				this.resetContactForm()
 				this.isFormSuccessMessageVisible = true
@@ -281,6 +296,11 @@ export default {
 		},
 		resetContactForm() {
 			this.contactFormData = getEmptyContactFormData()
+		},
+		encodeForm(data) {
+			return Object.keys(data)
+				.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+				.join('&')
 		},
 	},
 }
