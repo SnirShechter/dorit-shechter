@@ -110,7 +110,7 @@
 						ניתן ליצור קשר דרך הטופס או במייל.
 					</p>
 					<div class="text-lg sm:text-lg mb-16">
-						<form netlify class="mb-12" name="contact">
+						<form netlify class="mb-12" name="contact" method="POST">
 							<!-- <p class="hidden">
 								<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
 							</p> -->
@@ -124,6 +124,7 @@
 										type="text"
 										name="name"
 										id="name"
+										autocomplete="name"
 										placeholder="ישראל ישראלי"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
@@ -139,6 +140,7 @@
 										type="email"
 										name="email"
 										id="email"
+										autocomplete="email"
 										placeholder="email@example.com"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 									/>
@@ -152,6 +154,7 @@
 
 									<input
 										type="subject"
+										autocomplete="off"
 										name="subject"
 										id="subject"
 										placeholder="חוות דעת מקצועית"
@@ -168,6 +171,7 @@
 										type="tel"
 										name="tel"
 										id="tel"
+										autocomplete="tel"
 										placeholder="054-123-4567"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 									/>
@@ -181,6 +185,7 @@
 								<textarea
 									id="message"
 									rows="5"
+									autocomplete="off"
 									name="message"
 									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-blue-700 mb-2 px-4 py-4"
 									placeholder="ברצוני לקבל שירות בנושא..."
