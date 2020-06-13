@@ -110,7 +110,7 @@
 						ניתן ליצור קשר דרך הטופס או במייל.
 					</p>
 					<div class="text-lg sm:text-lg mb-16">
-						<form action="#" netlify class="mb-12" name="contact">
+						<form action="/" netlify class="mb-12" name="contact">
 							<!-- <p class="hidden">
 								<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
 							</p> -->
