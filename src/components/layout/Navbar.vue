@@ -48,9 +48,6 @@
 					>
 					<g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">שירותים</g-link>
 				</li>
-				<li>
-					<g-link to="/blog" class="text-copy-primary hover:text-gray-600">מאמרים</g-link>
-				</li>
 			</ul>
 		</nav>
 	</header>

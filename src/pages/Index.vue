@@ -5,7 +5,7 @@
 				<div class="leading-tight">דורית שכטר</div>
 				<div class="text-blue-700 leading-tight">ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד</div>
 			</div>
-			<div class="mt-8 sm:mt-0 w-6/12">
+			<div class="mt-8 sm:mt-0 sm:w-6/12">
 				<g-image src="../assets/images/profile.jpg" alt="hero" class="mx-auto sm:mx-0" />
 			</div>
 		</div>
@@ -21,7 +21,7 @@
 				כלליים,קביעת מדיניות החברה, ביצוע הדרכות מקצועיות לעובדים וסוכנים וסיוע מקצועי תדיר למחלקת התביעות.
 			</p>
 
-			<!-- TODO: replace images -->
+			<!-- TODO: images -->
 			<!-- <div class="flex justify-between items-center py-6">
 				<div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
 					<g-image src="../assets/images/profile.jpg" alt="browser" />
