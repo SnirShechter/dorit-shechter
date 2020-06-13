@@ -110,10 +110,17 @@
 						ניתן ליצור קשר דרך הטופס או במייל.
 					</p>
 					<div class="text-lg sm:text-lg mb-16">
-						<form netlify class="mb-12" name="contact" method="POST">
-							<!-- <p class="hidden">
+						<form
+							data-netlify="true"
+							data-netlify-honeypot="bot-field"
+							class="mb-12"
+							name="contact"
+							method="POST"
+							@submit.prevent="submitContactForm"
+						>
+							<div class="hidden">
 								<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-							</p> -->
+							</div>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
 									<label class="block mb-2 text-copy-primary" for="name">
@@ -193,11 +200,29 @@
 							</div>
 
 							<div class="flex justify-end w-full">
-								<input
-									type="submit"
-									value="שליחה"
-									class="block bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
-								/>
+								<transition name="fade" mode="out-in">
+									<input
+										type="submit"
+										value="שליחה"
+										:disabled="isSendingForm"
+										style="height: 50px; width: 120px;"
+										v-if="!isFormSuccessMessageVisible"
+										class="block bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3 duration-400 transition-all"
+									/>
+									<div
+										v-else
+										class="text-green-500 text-md text-center font-semibold text-left py-3"
+										style="height: 50px; width: 120px;"
+									>
+										הטופס נשלח
+									</div>
+								</transition>
+							</div>
+							<div
+								:class="isFormFailMessageVisible ? '' : 'opacity-0'"
+								class="text-red-600 text-md font-semibold text-left py-3 transition-all duration-300"
+							>
+								שליחת הטופס נכשלה. אנא נסה שנית.
 							</div>
 						</form>
 						<div class="sm:w-8/12 flex-col mb-12 space-y-2">
@@ -223,11 +248,45 @@
 
 <script>
 import Dots from '../assets/images/dots.svg'
+import axios from 'axios'
+
+const getEmptyContactFormData = () => ({ name: '', email: '', phone: '', subject: '', message: '' })
 export default {
 	metaInfo: {
 		title: 'דף הבית',
 	},
 	components: { Dots },
+	data() {
+		return {
+			contactFormData: getEmptyContactFormData(),
+			isSendingForm: false,
+			isFormSuccessMessageVisible: false,
+			isFormFailMessageVisible: false,
+		}
+	},
+	methods: {
+		async submitContactForm() {
+			try {
+				await axios.post('/', this.contactFormData)
+				this.isSendingForm = true
+				this.resetContactForm()
+				this.isFormSuccessMessageVisible = true
+				setTimeout(() => {
+					this.isFormSuccessMessageVisible = false
+				}, 4000)
+			} catch {
+				this.isFormFailMessageVisible = true
+				setTimeout(() => {
+					this.isFormFailMessageVisible = false
+				}, 4000)
+			} finally {
+				this.isSendingForm = false
+			}
+		},
+		resetContactForm() {
+			this.contactFormData = getEmptyContactFormData()
+		},
+	},
 }
 </script>
 

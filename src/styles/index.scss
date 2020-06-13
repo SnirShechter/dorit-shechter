@@ -39,11 +39,24 @@ $color-blue: #006486;
 a {
 	@apply text-blue-700 font-bold;
 }
-
+button:disabled,
+input[type="submit"]:disabled {
+	@apply opacity-50 cursor-not-allowed;
+}
 a:hover {
 	@apply text-blue-800;
 }
 
 .svg-fill-blue-700 {
 	fill: #006486;
+}
+
+// Vue transition - fade
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
 }
