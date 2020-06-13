@@ -79,10 +79,7 @@ module.exports = {
 			mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
 		},
 	},
-	variants: {
-		// Some useful comment
-	},
-	plugins: [
-		// Some useful comment
-	],
+	variants: {},
+	plugins: [],
+	purge: ['./src/**/*.vue', './src/**/*.scss', './src/**/*.js', './src/**/*.html', './src/**/*.md'],
 }
