@@ -162,13 +162,14 @@
 							</div>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full px-4 md:w-1/2">
-									<label class="block text-copy-primary mb-2">
+									<!-- <label class="block text-copy-primary mb-2">
 										נושא פנייה
-									</label>
-									<!-- <select
+									</label> -->
+									<select
 										v-model="contactFormData.subject"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
+										name="subject"
 										autocomplete="off"
 									>
 										<option value="ייעוץ">
@@ -186,7 +187,7 @@
 										<option value="אחר">
 											אחר
 										</option>
-									</select> -->
+									</select>
 									<!-- <label class="block text-copy-primary mb-2" for="subject">
 										נושא פנייה
 									</label>
