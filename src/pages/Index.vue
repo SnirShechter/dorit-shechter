@@ -166,13 +166,14 @@
 										נושא פנייה
 									</label>
 									<select
-										v-model="contactFormData.subject"
+										:value="contactFormData.subject"
+										@input="contactFormData.subject = $event"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
 										name="subject"
 										autocomplete="off"
 									>
-										<option value="ייעוץ" selected>
+										<option value="ייעוץ">
 											ייעוץ
 										</option>
 										<option value="כתיבת חוות דעת">
