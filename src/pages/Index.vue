@@ -125,11 +125,7 @@
 							method="POST"
 							@submit.prevent="submitContactForm"
 							data-netlify="true"
-							netlify-honeypot="bot-field"
 						>
-							<p class="hidden">
-								<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-							</p>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
 									<label class="block mb-2 text-copy-primary" for="name">
