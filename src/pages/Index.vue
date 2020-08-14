@@ -162,7 +162,7 @@
 							</div>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full px-4 md:w-1/2">
-									<label class="block text-copy-primary mb-2" for="subject">
+									<label class="block text-copy-primary mb-2">
 										נושא פנייה
 									</label>
 									<select
