@@ -192,14 +192,14 @@
 									</select>
 								</div>
 								<div class="w-full px-4 md:w-1/2">
-									<label class="block text-copy-primary mb-2" for="tel">
+									<label class="block text-copy-primary mb-2" for="phone">
 										טלפון
 									</label>
 
 									<input
 										type="tel"
-										name="tel"
-										id="tel"
+										name="phone"
+										id="phone"
 										v-model="contactFormData.phone"
 										autocomplete="tel"
 										placeholder="054-123-4567"
