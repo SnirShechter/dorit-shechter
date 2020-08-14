@@ -119,7 +119,13 @@
 						ניתן ליצור קשר דרך הטופס או במייל.
 					</p>
 					<div class="text-lg sm:text-lg mb-16">
-						<form class="mb-12" name="contact" method="POST" @submit.prevent="submitContactForm">
+						<form
+							class="mb-12"
+							name="contact"
+							method="POST"
+							@submit.prevent="submitContactForm"
+							data-netlify="true"
+						>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
 									<label class="block mb-2 text-copy-primary" for="name">
@@ -159,12 +165,10 @@
 									<label class="block text-copy-primary mb-2" for="subject">
 										נושא פנייה
 									</label>
-									<select
+									<!-- <select
 										v-model="contactFormData.subject"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
-										id="subject"
-										type="subject"
 										autocomplete="off"
 										name="subject"
 									>
@@ -183,7 +187,7 @@
 										<option value="אחר">
 											אחר
 										</option>
-									</select>
+									</select> -->
 									<!-- <label class="block text-copy-primary mb-2" for="subject">
 										נושא פנייה
 									</label>
