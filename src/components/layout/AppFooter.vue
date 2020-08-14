@@ -9,7 +9,7 @@
 			<ul class="flex items-center space-x-8 space-x-reverse">
 				<li>
 					<a
-						href="mailto:dorit@doritshechter.com"
+						href="mailto:doritabcd@gmail.com"
 						class="text-white hover:text-gray-400"
 						aria-label="Email"
 						name="Email"

@@ -16,19 +16,47 @@
 			</div>
 		</div>
 		<!-- end hero -->
+		<div class="overflow-x-hidden">
+			<div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative border-gray-500 border-t">
+				<!-- margin is more appropriate here than padding, but we need the padding for the #anchor spacing when scrolling -->
+				<h2 class="font-bold mb-6 pt-16" id="about">אודות</h2>
 
-		<div class="container-inner mx-auto mb-12">
-			<p class="text-lg sm:text-xl mb-6">
-				יועצת לענייני חיתום ותביעות בתחום ביטוח חיים, בריאות וסיעוד עתירת נסיון וידע של כ-30 שנה בנושאים אלו.
-				חברת הוועד המנהל של אגודת החתמים ומיישבי התביעות.
-			</p>
-			<p class="text-lg sm:text-xl">
-				מנהלת מחלקת חיתום במשך כ20 שנה בחברות ביטוח שונות מנהלת מחלקת תביעות במשך כ7 שנים. שותפה לכתיבת תנאים
-				כלליים,קביעת מדיניות החברה, ביצוע הדרכות מקצועיות לעובדים וסוכנים וסיוע מקצועי תדיר למחלקת התביעות.
-			</p>
+				<div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg);">
+					<svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+				</div>
 
-			<!-- TODO: images -->
-			<!-- <div class="flex justify-between items-center py-6">
+				<div class="flex flex-col sm:flex-row justify-between items-center">
+					<div class="flex-1 text-lg sm:text-xl ml-6">
+						<p class="text-lg sm:text-xl mb-6">
+							בעלת ניסיון רב כמנהלת מחלקת חיתום בחברות ביטוח מובילות וכן כמנהלת מחלקת תביעות. במסגרת
+							תפקידים אלו דורית הייתה שותפה לכתיבת תנאים כלליים, קביעת מדיניות החברה וביצוע הדרכות והעשרות
+							לסוכני ביטוח ועובדי החברה.
+						</p>
+						<p class="text-lg sm:text-xl mb-6">
+							דורית עתירת ידע הן בביצוע חיתום רפואי, מקצועי ופיננסי והן בתנאי הביטוח, ברגולציה, בתחיקה
+							ובנהלי החברה הרלבנטיים לנושאים אלו.
+						</p>
+						<p class="text-lg sm:text-xl mb-6">
+							מיומנת מאד בטיפול בתביעות ובקריאת תיקים רפואיים.
+						</p>
+						<p class="text-lg sm:text-xl mb-6">
+							יועצת חיתום בלשכת סוכני הביטוח וחברת הוועד המנהל של אגודת החתמים ומיישבי התביעות.
+						</p>
+						<p class="text-lg sm:text-xl">
+							משמשת כיועצת וכעדה מומחית וכותבת חוות דעת לשם הגשה לבית המשפט.
+							<br />
+							לאור הנסיון הרב, הייעוץ וכתיבת חוות הדעת נעשים באופן הוליסטי: מקצועי, מבוסס היטב ומקיף
+							ביותר.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end get-to-know me -->
+		</div>
+		<!-- <div class="container-inner mx-auto mb-12"> -->
+
+		<!-- TODO: images -->
+		<!-- <div class="flex justify-between items-center py-6">
 				<div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
 					<g-image src="../assets/images/profile.jpg" alt="browser" />
 				</div>
@@ -36,14 +64,14 @@
 					<g-image src="../assets/images/profile.jpg" alt="mobile" />
 				</div>
 			</div> -->
-		</div>
+		<!-- </div> -->
 
 		<div class="overflow-x-hidden">
-			<div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b pb-16 relative">
+			<div class="projects container-inner mx-auto text-xl border-t border-gray-500 pb-16 relative">
 				<!-- margin is more appropriate here than padding, but we need the padding for the #anchor spacing when scrolling -->
 				<h2 class="font-bold mb-6 pt-16" id="projects">שירותים</h2>
 
-				<div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg);">
+				<div class="absolute left-0" style="bottom: 50px; transform: translateX(-100%);">
 					<svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
 				</div>
 
@@ -57,13 +85,13 @@
 					<li class="checkmark">
 						<div>חוות דעת</div>
 						<div class="text-lg text-gray-600">
-							כתיבת חוות דעת מקצועית לשם הגשה לחברות הביטוח או לבית המשפט
+							כתיבת חוות דעת לשם הגשה לבית משפט
 						</div>
 					</li>
 					<li class="checkmark">
 						<div>ייעוץ לתובעים</div>
 						<div class="text-lg text-gray-600">
-							מתן ייעוץ בתיקים משפטיים
+							מתן ייעוץ בתיקי תביעה, כולל תיקים משפטיים
 						</div>
 					</li>
 					<li class="checkmark">
@@ -75,25 +103,6 @@
 				</ul>
 			</div>
 			<!-- end projects -->
-		</div>
-
-		<div class="overflow-x-hidden border-gray-200 border-b">
-			<div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
-				<!-- margin is more appropriate here than padding, but we need the padding for the #anchor spacing when scrolling -->
-				<h2 class="font-bold mb-6 pt-16" id="about">אודות</h2>
-
-				<div class="absolute left-0" style="top: 50px; transform: translateX(-100%);">
-					<svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
-				</div>
-
-				<div class="flex flex-col sm:flex-row justify-between items-center">
-					<div class="flex-1 text-lg sm:text-xl ml-6">
-						יועצת לענייני חיתום ותביעות בתחום ביטוח חיים, בריאות וסיעוד עתירת נסיון וידע של כ-30 שנה בנושאים
-						אלו. חברת הוועד המנהל של אגודת החתמים ומיישבי התביעות.
-					</div>
-				</div>
-			</div>
-			<!-- end get-to-know me -->
 		</div>
 
 		<div class="overflow-x-hidden">
@@ -157,6 +166,34 @@
 									<label class="block text-copy-primary mb-2" for="subject">
 										נושא פנייה
 									</label>
+									<select
+										v-model="contactFormData.subject"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
+										required
+										id="subject"
+										type="subject"
+										autocomplete="off"
+										name="subject"
+									>
+										<option value="ייעוץ">
+											ייעוץ
+										</option>
+										<option value="כתיבת חוות דעת">
+											כתיבת חוות דעת
+										</option>
+										<option value="כתיבת הערכה ראשונית">
+											כתיבת הערכה ראשונית
+										</option>
+										<option value="עיון בתיק רפואי">
+											עיון בתיק רפואי
+										</option>
+										<option value="אחר">
+											אחר
+										</option>
+									</select>
+									<!-- <label class="block text-copy-primary mb-2" for="subject">
+										נושא פנייה
+									</label>
 
 									<input
 										type="subject"
@@ -167,7 +204,7 @@
 										placeholder="חוות דעת מקצועית"
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
-									/>
+									/> -->
 								</div>
 								<div class="w-full px-4 md:w-1/2">
 									<label class="block text-copy-primary mb-2" for="tel">
@@ -230,7 +267,7 @@
 						<div class="sm:w-8/12 flex-col mb-12 space-y-2">
 							<div class="flex justify-between flex-wrap">
 								<span class="ml-8 font-medium">דואר אלקטרוני</span>
-								<a href="mailto:dorit@doritshechter.com">dorit@doritshechter.com</a>
+								<a href="mailto:doritabcd@gmail.com">doritabcd@gmail.com</a>
 							</div>
 							<div class="flex justify-between flex-wrap">
 								<span class="ml-8 font-medium">טלפון נייד</span>
@@ -255,7 +292,7 @@ const getEmptyContactFormData = () => ({
 	name: '',
 	email: '',
 	phone: '',
-	subject: '',
+	subject: 'ייעוץ',
 	message: '',
 	'form-name': 'contact',
 })

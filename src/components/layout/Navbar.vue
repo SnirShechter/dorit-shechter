@@ -2,8 +2,11 @@
 	<header class="border-t-14 border-blue-700">
 		<nav class="container mx-auto flex flex-wrap flex-row-reverse justify-between items-center py-8">
 			<div>
-				<g-link to="/"
-					><g-image src="../../assets/images/logo.png" class="w-20" alt="logo" width="80" height="77"
+				<g-link to="/" class="md:hidden logo"
+					><g-image src="../../assets/images/logo.jpg" class="w-20" alt="logo" width="80" height="77"
+				/></g-link>
+				<g-link to="/" class="hidden md:block logo"
+					><g-image src="../../assets/images/logo-with-text.jpeg" alt="logo" width="380"
 				/></g-link>
 			</div>
 			<div class="block lg:hidden">
@@ -79,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav .active {
+nav .active:not(.logo) {
 	font-weight: bold;
 	@apply border-black border-b;
 }

@@ -3,6 +3,7 @@ module.exports = {
 	siteName: 'דורית שכטר - ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד',
 	siteDescription: 'ייעוץ חיתום ותביעות ביטוח חיים, בריאות וסיעוד',
 	siteUrl: 'https://doritshechter.co.il',
+	icon: './src/assets/images/logo.jpg',
 	chainWebpack: (config) => {
 		const svgRule = config.module.rule('svg')
 		svgRule.uses.clear()
