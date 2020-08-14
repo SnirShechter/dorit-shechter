@@ -170,7 +170,6 @@
 										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-blue-700 mb-2 p-4"
 										required
 										autocomplete="off"
-										name="subject"
 									>
 										<option value="ייעוץ">
 											ייעוץ
