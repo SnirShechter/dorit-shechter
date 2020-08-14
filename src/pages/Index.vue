@@ -165,7 +165,12 @@
 									<label class="block text-copy-primary mb-2">
 										נושא פנייה
 									</label>
-									<select required name="subject" autocomplete="off">
+									<select
+										v-model="contactFormData.subject"
+										required
+										name="subject"
+										autocomplete="off"
+									>
 										<option value="ייעוץ">
 											ייעוץ
 										</option>
