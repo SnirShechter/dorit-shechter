@@ -15,3 +15,11 @@
 
 -   Contentful CMS integration
 -   Building the other pages
+
+## Accounts Info
+
+-	Content: [Contentful](contentful.com) (Github account snirshechter@gmail.com)
+-	Domains:
+	- doritshechter.com: [GoDaddy](godaddy.com) (snirshechter@gmail.com)
+	- doritshechter.co.il: [Box](box.co.il) (snirshechter@gmail.com)
+-	Hosting: [Netlify](netlify.com) (Github account snirshechter@gmail.com)
