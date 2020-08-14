@@ -128,10 +128,7 @@
 						>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
-									<label class="block mb-2 text-copy-primary" for="name">
-										שם
-									</label>
-
+									<label class="block mb-2 text-copy-primary" for="name">שם </label>
 									<input
 										type="text"
 										name="name"
@@ -145,10 +142,7 @@
 								</div>
 
 								<div class="w-full px-4 md:w-1/2">
-									<label class="block text-copy-primary mb-2" for="email">
-										דואר אלקטרוני
-									</label>
-
+									<label class="block text-copy-primary mb-2" for="email">דואר אלקטרוני </label>
 									<input
 										type="email"
 										name="email"
@@ -162,9 +156,7 @@
 							</div>
 							<div class="flex flex-wrap mb-6 -mx-4">
 								<div class="w-full px-4 md:w-1/2">
-									<label class="block text-copy-primary mb-2" for="subject">
-										נושא פנייה
-									</label>
+									<label class="block text-copy-primary mb-2" for="subject">נושא פנייה</label>
 									<select
 										:value="contactFormData.subject"
 										@input="contactFormData.subject = $event.target.value"
@@ -192,10 +184,7 @@
 									</select>
 								</div>
 								<div class="w-full px-4 md:w-1/2">
-									<label class="block text-copy-primary mb-2" for="phone">
-										טלפון
-									</label>
-
+									<label class="block text-copy-primary mb-2" for="phone">טלפון</label>
 									<input
 										type="tel"
 										name="phone"
@@ -208,10 +197,7 @@
 								</div>
 							</div>
 							<div class="w-full mb-12">
-								<label class="block text-copy-primary mb-2" for="message">
-									הודעה
-								</label>
-
+								<label class="block text-copy-primary mb-2" for="message">הודעה</label>
 								<textarea
 									id="message"
 									rows="5"
@@ -235,7 +221,7 @@
 									/>
 									<div
 										v-else
-										class="text-green-500 text-md text-center font-semibold text-left py-3"
+										class="text-green-500 text-md text-center font-semibold py-3"
 										style="height: 50px; width: 120px;"
 									>
 										הטופס נשלח
