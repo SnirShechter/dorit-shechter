@@ -1,25 +1,6 @@
-# Contentful Starter for Gridsome
+# Dorit Shechter's website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27da0737-e7dc-48cf-97e5-af3146792901/deploy-status)](https://app.netlify.com/sites/dorit-shechter/deploys)
 
-## Structure
-
-#### Pages
-
--   Contact
--   About
--   Services
--   Blog
-
-## TODO
-
--   Contentful CMS integration
--   Building the other pages
-
-## Accounts Info
-
--	Content: [Contentful](contentful.com) (Github account snirshechter@gmail.com)
--	Domains:
-	- doritshechter.com: [GoDaddy](godaddy.com) (snirshechter@gmail.com)
-	- doritshechter.co.il: [Box](box.co.il) (snirshechter@gmail.com)
--	Hosting: [Netlify](netlify.com) (Github account snirshechter@gmail.com)
+## Website
+The website can be found [here]](https://doritshechter.co.il)

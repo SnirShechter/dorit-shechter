@@ -16,14 +16,6 @@ module.exports = {
 	},
 	plugins: [
 		{
-			use: '@gridsome/source-contentful',
-			options: {
-				space: 'reqntq6nxb16', // required
-				accessToken: 'ijmcFGF6gYieVcXgU49WFcQP3wW-olIgTlLsLlIjCLM', // required
-				typeName: 'Contentful',
-			},
-		},
-		{
 			use: 'gridsome-plugin-tailwindcss',
 			options: {
 				purgeConfig: {

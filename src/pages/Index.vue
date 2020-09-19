@@ -53,18 +53,6 @@
 			</div>
 			<!-- end get-to-know me -->
 		</div>
-		<!-- <div class="container-inner mx-auto mb-12"> -->
-
-		<!-- TODO: images -->
-		<!-- <div class="flex justify-between items-center py-6">
-				<div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-					<g-image src="../assets/images/profile.jpg" alt="browser" />
-				</div>
-				<div class="w-1/2 px-8 hidden sm:flex justify-end">
-					<g-image src="../assets/images/profile.jpg" alt="mobile" />
-				</div>
-			</div> -->
-		<!-- </div> -->
 
 		<div class="overflow-x-hidden">
 			<div class="projects container-inner mx-auto text-xl border-t border-gray-500 pb-16 relative">
@@ -215,14 +203,12 @@
 										type="submit"
 										value="שליחה"
 										:disabled="isSendingForm"
-										style="height: 50px; width: 120px;"
 										v-if="!isFormSuccessMessageVisible"
-										class="block bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3 duration-400 transition-all"
+										class="submit-btn-content block bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3 duration-400 transition-all"
 									/>
 									<div
 										v-else
-										class="text-green-500 text-md text-center font-semibold py-3"
-										style="height: 50px; width: 120px;"
+										class="submit-btn-content text-green-500 text-md text-center font-semibold py-3"
 									>
 										הטופס נשלח
 									</div>
@@ -312,7 +298,7 @@ export default {
 		},
 		encodeForm(data) {
 			return Object.keys(data)
-				.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+				.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
 				.join('&')
 		},
 	},
@@ -324,5 +310,9 @@ export default {
 	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2229%22%20height%3D%2229%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4.427%2024.93A14.5%2014.5%200%201%201%2024.93%204.427c5.495%205.69%205.416%2014.733-.177%2020.326s-14.637%205.672-20.326.177z%22%20fill%3D%22%23008ab8%22/%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M10.234%2012.803l3.67%203.253L20.766%2010%2023%2012l-9.096%208L8%2014.789l2.234-2z%22/%3E%3C/svg%3E');
 	background-repeat: no-repeat;
 	@apply pl-10;
+}
+.submit-btn-content {
+	height: 50px;
+	width: 120px;
 }
 </style>
