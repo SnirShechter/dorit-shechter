@@ -9,11 +9,6 @@ module.exports = {
 		svgRule.uses.clear()
 		svgRule.use('vue-svg-loader').loader('vue-svg-loader')
 	},
-	templates: {
-		// Add templates for content types here.
-		// Read more: https://gridsome.org/docs/templates/
-		// Tag: '/tag/:id',
-	},
 	plugins: [
 		{
 			use: 'gridsome-plugin-tailwindcss',
@@ -21,7 +16,7 @@ module.exports = {
 				purgeConfig: {
 					content: ['./src/**/*.vue', './src/**/*.scss', './src/**/*.js', './src/**/*.html', './src/**/*.md'],
 					whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loaded', 'active'],
-					defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+					defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
 				},
 			},
 		},
